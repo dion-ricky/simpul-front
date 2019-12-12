@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700&display=swap");
 html, body {
   margin: 0;
   width: 100%;
@@ -14,8 +14,13 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; }
+
+h1 {
   font-size: 1.75rem; }
+
+h2 {
+  font-size: 1.25rem; }
 
 nav > ul {
   position: fixed;
@@ -26,7 +31,8 @@ nav > ul {
   padding: 1rem 3rem;
   margin: 0;
   display: flex;
-  flex-flow: row; }
+  flex-flow: row;
+  transition: padding .25s, box-shadow .25s; }
   nav > ul li {
     float: left;
     margin: 0 1rem;
@@ -51,6 +57,15 @@ nav > ul {
   nav > ul .material-icons {
     font-size: 2rem;
     line-height: 3rem; }
+
+nav.nav-scrolled > ul {
+  padding: .25rem 3rem;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15); }
+  nav.nav-scrolled > ul li a.active {
+    font-size: 1rem;
+    line-height: normal; }
 
 .container-card {
   background-color: #f4f5f9;
@@ -149,6 +164,106 @@ ol.custom-list li {
   .category-card-link:visited {
     color: inherit; }
 
+.main-test-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 1rem; }
+
+.answer-header-container {
+  grid-row-start: 1;
+  display: flex;
+  align-items: flex-end; }
+  .answer-header-container table {
+    width: 100%; }
+    .answer-header-container table tr {
+      display: grid;
+      grid-template-columns: 2.5rem repeat(5, 30px); }
+      .answer-header-container table tr td {
+        padding: 0; }
+
+.answer-container {
+  grid-row-start: 2; }
+  .answer-container div:first-child {
+    max-height: calc(100vh - 90px);
+    overflow-y: scroll; }
+  .answer-container ol {
+    padding-left: 2rem; }
+    .answer-container ol li {
+      margin-bottom: .5rem; }
+      .answer-container ol li input {
+        margin: 0 .4rem; }
+    .answer-container ol li:nth-child(even) {
+      background-color: #ddd; }
+
+.question-container .category-card {
+  padding: .5rem;
+  cursor: default;
+  line-height: 0; }
+
+.question-details {
+  display: flex;
+  align-items: center;
+  margin-left: .5rem; }
+  .question-details table {
+    border-spacing: .5rem 0;
+    border-collapse: separate; }
+
+.question-list {
+  grid-row-start: 2; }
+  .question-list li {
+    margin-bottom: 1rem; }
+  .question-list p {
+    margin-bottom: .5rem; }
+
+.question-choice-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .question-choice-list p::before {
+    padding-right: .5rem; }
+  .question-choice-list p:nth-child(1)::before {
+    content: "A."; }
+  .question-choice-list p:nth-child(2)::before {
+    content: "B."; }
+  .question-choice-list p:nth-child(3)::before {
+    content: "C."; }
+  .question-choice-list p:nth-child(4)::before {
+    content: "D."; }
+  .question-choice-list p:nth-child(5)::before {
+    content: "E."; }
+
+.question-choice-list.choice-list-vertical p:nth-child(1) {
+  grid-row-start: 1; }
+.question-choice-list.choice-list-vertical p:nth-child(2) {
+  grid-row-start: 2; }
+.question-choice-list.choice-list-vertical p:nth-child(3) {
+  grid-row-start: 1; }
+.question-choice-list.choice-list-vertical p:nth-child(4) {
+  grid-row-start: 2; }
+.question-choice-list.choice-list-vertical p:nth-child(5) {
+  grid-row-start: 1; }
+
+.question-choice-list.choice-2-col p:nth-child(1) {
+  grid-row-start: 1; }
+.question-choice-list.choice-2-col p:nth-child(2) {
+  grid-row-start: 2; }
+.question-choice-list.choice-2-col p:nth-child(3) {
+  grid-row-start: 3; }
+.question-choice-list.choice-2-col p:nth-child(4) {
+  grid-row-start: 1; }
+.question-choice-list.choice-2-col p:nth-child(5) {
+  grid-row-start: 2; }
+
+.question-choice-list.choice-1-col p:nth-child(1) {
+  grid-row-start: 1; }
+.question-choice-list.choice-1-col p:nth-child(2) {
+  grid-row-start: 2; }
+.question-choice-list.choice-1-col p:nth-child(3) {
+  grid-row-start: 3; }
+.question-choice-list.choice-1-col p:nth-child(4) {
+  grid-row-start: 4; }
+.question-choice-list.choice-1-col p:nth-child(5) {
+  grid-row-start: 5; }
+
 footer {
   margin-top: 2rem;
   background-color: white;
@@ -157,5 +272,8 @@ footer {
     color: #707070; }
   footer h1 {
     font-size: 1rem; }
+
+.fixed {
+  position: fixed; }
 
 /*# sourceMappingURL=master.css.map */

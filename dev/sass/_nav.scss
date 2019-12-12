@@ -8,6 +8,7 @@ nav > ul {
   margin: 0;
   display: flex;
   flex-flow: row;
+  transition: padding .25s, box-shadow .25s;
 
   li {
     float: left;
@@ -43,5 +44,19 @@ nav > ul {
   .material-icons {
     font-size: 2rem;
     line-height: 3rem;
+  }
+}
+
+nav.nav-scrolled > ul {
+  padding: .25rem 3rem;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.15);
+
+  li {
+    a.active {
+      font-size: 1rem;
+      line-height: normal;
+    }
   }
 }

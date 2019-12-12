@@ -20,7 +20,13 @@ h1 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
+}
+h1 {
   font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
 }
 
 @import 'nav';
@@ -51,3 +57,7 @@ img.user-avatar.avatar-rounded {
 @import 'test-online';
 @import 'test-soal';
 @import 'footer';
+
+.fixed {
+  position: fixed;
+}
