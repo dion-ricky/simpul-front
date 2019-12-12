@@ -1,0 +1,53 @@
+@import 'font';
+@import 'config';
+
+html, body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
+
+body {
+  background-color: $bodybg;
+  min-height: 100vh;
+}
+
+h1 {
+  color: $headercolor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+}
+
+@import 'nav';
+
+.container-card {
+  background-color: $containerbg;
+  border-radius: 1rem;
+  padding: 3rem 5rem;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+img.user-avatar {
+  width: 50px;
+
+}
+
+img.user-avatar.avatar-rounded {
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+@import 'test-online';
+@import 'test-soal';
+@import 'footer';
