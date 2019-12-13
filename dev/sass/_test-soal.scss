@@ -24,7 +24,8 @@
 }
 
 .answer-container {
-  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row: 2/3;
 
   div:first-child {
     max-height: calc(100vh - 90px);
@@ -180,4 +181,8 @@
   p:nth-child(5) {
     grid-row-start: 5;
   }
+}
+
+.tes-submit {
+  grid-column-start: 2;
 }

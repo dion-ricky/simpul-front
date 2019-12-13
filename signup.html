@@ -28,7 +28,7 @@
         </div>
       </li>
       <li>
-        <a class="active" href="/">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
         <a href="/test-online.html">Test Online</a>
@@ -45,48 +45,52 @@
     <form class="form-signup ">
       <div class="signup-grid">
         <div class="form-group">
-          <label for="inputPassword">Nama</label>
-          <input type="text" id="inputPassword" class="form-control" placeholder="Nama" required>
+          <label for="signupNama">Nama</label>
+          <input type="text" id="signupNama" class="form-control" placeholder="Nama" required>
         </div>
         <div class="form-group">
-          <label for="inputPassword">Phone</label>
-          <input type="text" id="inputPassword" class="form-control" placeholder="08123456789" required>
+          <label for="signupPhone">Phone</label>
+          <input type="text" id="signupPhone" class="form-control" placeholder="08123456789" required>
         </div>
         <div class="form-group">
-          <label for="inputPassword">NISN</label>
-          <input type="text" id="inputPassword" class="form-control" placeholder="9224192919" required>
+          <label for="signupNisn">NISN</label>
+          <input type="text" id="signupNisn" class="form-control" placeholder="9224192919" required>
         </div>
         <div class="form-group">
-          <label for="inputPassword">Kontak Darurat</label>
-          <input type="text" id="inputPassword" class="form-control" placeholder="08987654321" required>
+          <label for="signupEmContact">Kontak Darurat</label>
+          <input type="text" id="signupEmContact" class="form-control" placeholder="08987654321" required>
         </div>
         <div class="form-group">
-          <label for="inputPassword">Tempat, Tanggal Lahir</label>
-          <input type="text" id="inputPassword" class="form-control" placeholder="Kota" required>
-          <input type="date" id="inputPassword" class="form-control" placeholder="01 Januari 2000" required>
+          <label for="signupCity">Tempat, Tanggal Lahir</label>
+          <input type="text" id="signupCity" class="form-control" placeholder="Kota" required>
+          <input type="date" id="signupDateOfBirth" class="form-control" placeholder="01 Januari 2000" required>
         </div>
         <div class="form-group">
-          <label for="inputPassword">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-          <input type="password" id="inputPasswordValidation" class="form-control"placeholder="Retype your password" value="">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+          <input type="password" id="signupPasswordValidation" class="form-control"placeholder="Retype your password" value="">
         </div>
         <div class="form-group">
-          <label for="inputPassword">Sekolah</label>
-          <input type="text" id="inputPassword" class="form-control" placeholder="Nama Sekolah" required>
+          <label for="signupSchool">Sekolah</label>
+          <input type="text" id="signupSchool" class="form-control" placeholder="Nama Sekolah" required>
         </div>
         <div class="form-group" style="grid-row-start: 4; grid-row-end: 6; grid-column-start: 2;">
-          <label for="inputEmail">Re-captcha</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-          <input type="checkbox" name="" value=""> Dengan ini saya menyetujui Syarat dan Ketentuan dan Kebijakan Privasi
+          <label for="signupCaptcha">Re-captcha</label>
+          <input type="email" id="signupCaptcha" class="form-control" placeholder="Captcha" required >
+          <label for="signupLegal">
+            <input type="checkbox" id="signupLegal" checked="true" name="" value="" required>
+            &nbsp;
+            Dengan ini saya menyetujui Syarat dan Ketentuan dan Kebijakan Privasi</label>
         </div>
         <div class="form-group">
-          <label for="inputEmail">Email address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <label for="signupEmail">Email address</label>
+          <input type="email" id="signupEmail" class="form-control" placeholder="Email address" required >
         </div>
       </div>
       <div class="text-center">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Create an account</button>
-        <a href="/signup.html">Sign in</a>
+        <span>Already have an account?</span>
+        <a href="/login.html">Sign in</a>
       </div>
     </form>
   </div>

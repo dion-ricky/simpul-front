@@ -118,7 +118,7 @@ img.user-avatar-lg {
   .category-card .material-icons {
     font-size: 5rem; }
 
-.category-card:hover {
+.category-card.card-hover:hover {
   box-shadow: 0px 0px 10px #ee7a90; }
 
 .category-card-link {
@@ -204,7 +204,8 @@ ol.custom-list li {
         padding: 0; }
 
 .answer-container {
-  grid-row-start: 2; }
+  grid-column-start: 1;
+  grid-row: 2/3; }
   .answer-container div:first-child {
     max-height: calc(100vh - 90px);
     overflow-y: scroll; }
@@ -285,6 +286,9 @@ ol.custom-list li {
   grid-row-start: 4; }
 .question-choice-list.choice-1-col p:nth-child(5) {
   grid-row-start: 5; }
+
+.tes-submit {
+  grid-column-start: 2; }
 
 footer {
   margin-top: 2rem;
