@@ -36,7 +36,7 @@
           <a href="/reward.html" class="active">Reward</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="/about.html">About</a>
         </li>
       </ul>
     </nav>
@@ -59,6 +59,44 @@
                   <span class="category-card-label">???</span>
                 </a>
               </div>
+              <div class="category-card">
+                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+                  <i class="material-icons">flight_takeoff</i>
+                  <span class="category-card-label">???</span>
+                </a>
+              </div>
+              <div class="category-card">
+                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+                  <i class="material-icons">flight_takeoff</i>
+                  <span class="category-card-label">Trip to Bali</span>
+                </a>
+              </div>
+            </div>
+            <div class="category-container">
+              <div class="category-card">
+                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+                  <i class="material-icons">attach_money</i>
+                  <span class="category-card-label">OVO Cash 10.000</span>
+                </a>
+              </div>
+              <div class="category-card">
+                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+                  <i class="material-icons">attach_money</i>
+                  <span class="category-card-label">OVO Cash 10.000</span>
+                </a>
+              </div>
+              <div class="category-card">
+                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+                  <i class="material-icons">attach_money</i>
+                  <span class="category-card-label">OVO Cash 10.000</span>
+                </a>
+              </div>
+              <div class="category-card">
+                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+                  <i class="material-icons">attach_money</i>
+                  <span class="category-card-label">OVO Cash 10.000</span>
+                </a>
+              </div>
             </div>
 
             <!-- Modal -->
@@ -66,14 +104,53 @@
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="claimModalTitle">Claim Reward</h5>
+                    <h5 class="modal-title" id="claimModalTitle" style="font-weight: 400">Claim Reward</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <form class="" action="index.html" method="post">
                     <div class="modal-body">
-                      ...
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" required>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Claim Reward</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="claimModalOvo" tabindex="-1" role="dialog" aria-labelledby="claimModalOvo" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="claimModalTitle" style="font-weight: 400">Claim Reward</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <form class="" action="index.html" method="post">
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="ovo">No. OVO</label>
+                        <input type="text" id="ovo" class="form-control" value="" required>
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>

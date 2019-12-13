@@ -7,13 +7,15 @@ html, body {
 
 body {
   background-color: #dbdeea;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding-top: 7rem;
+  padding-bottom: 5rem; }
 
 h1 {
   color: #707070; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif; }
 
 h1 {
@@ -21,6 +23,10 @@ h1 {
 
 h2 {
   font-size: 1.25rem; }
+
+nav {
+  position: absolute;
+  top: 0; }
 
 nav > ul {
   position: fixed;
@@ -71,9 +77,6 @@ nav.nav-scrolled > ul {
   background-color: #f4f5f9;
   border-radius: 1rem;
   padding: 3rem 5rem; }
-
-main {
-  padding-top: 7rem; }
 
 img.user-avatar {
   width: 50px; }
@@ -275,5 +278,10 @@ footer {
 
 .fixed {
   position: fixed; }
+
+label::after {
+  content: attr(data-after-value);
+  color: red;
+  margin-left: .5rem; }
 
 /*# sourceMappingURL=master.css.map */

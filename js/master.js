@@ -19,4 +19,10 @@ $(document).ready(function () {
     $(this).css('top', $("nav > ul").outerHeight());
     $(this).attr("fixed-position-offset", $(this).offset().top);
   });
+
+  $("[required]").each(function (id) {
+    // console.log($(this).attr("id"));
+    // $("label[for='"+ $(this).attr("id") +"']");
+    $("[for='"+ $(this).attr("id")+"']").attr("data-after-value", "*");
+  });
 });

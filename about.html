@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/js/master.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a class="account_avatar" href="#" id="accountAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-html="true" title="">
+            <i class="material-icons">account_circle</i>
+          </a>
+
+         <div class="dropdown-menu" aria-labelledby="accountAvatar">
+           <a class="dropdown-item" href="#">Profile</a>
+           <a class="dropdown-item" href="#">Log out</a>
+           <a class="dropdown-item" href="#">Log in</a>
+         </div>
+        </li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/test-online.html">Test Online</a>
+        </li>
+        <li>
+          <a href="/reward.html">Reward</a>
+        </li>
+        <li>
+          <a href="/about.html" class="active">About</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <h1>Our Service</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>Our Goals</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>CONTACT</h1>
+        <h2>E-MAIL</h2>
+        <span>ADMIN@SIMPUL.COM</span>
+        <h2 style="margin-top: 1rem;">PHONE</h2>
+        <span>(021) 8787 - 8686</span>
+        <h2 style="margin-top: 1rem;">ADDRESS</h2>
+        <span>Jl. Terusan Ambarawa No. 10, Lowokwaru, Malang, Jawa Timur 65145</span>
+
+        <form class="" action="index.html" method="post" style="margin-top: 2rem;">
+          <h1>CONTACT US</h1>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Name" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" id="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="name">Phone</label>
+                <input type="text" id="phone" class="form-control" placeholder="08123456789" required>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" id="email" class="form-control" placeholder="Subject" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="8" cols="80" class="form-control" placeholder="Message" required></textarea>
+          </div>
+          <div class="flex flex-row" style="justify-content: flex-end">
+            <a href="#" class="btn btn-primary flex" onclick="document.getElementById('myForm').submit();">
+              Send
+              &nbsp;
+              <i class="material-icons">send</i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -11,6 +11,8 @@ html, body {
 body {
   background-color: $bodybg;
   min-height: 100vh;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
 }
 
 h1 {
@@ -18,7 +20,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
 h1 {
@@ -38,7 +40,6 @@ h2 {
 }
 
 main {
-  padding-top: 7rem;
 }
 
 img.user-avatar {
@@ -60,4 +61,10 @@ img.user-avatar.avatar-rounded {
 
 .fixed {
   position: fixed;
+}
+
+label::after {
+  content: attr(data-after-value);
+  color: red;
+  margin-left: .5rem;
 }
