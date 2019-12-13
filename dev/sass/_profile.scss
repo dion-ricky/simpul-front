@@ -1,0 +1,40 @@
+.profile-card {
+  padding: 3rem 3rem;
+}
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+  grid-gap: .5rem 2rem;
+
+  div:nth-child(1) {
+    grid-row-start: 1;
+  }
+
+  div:nth-child(2) {
+    grid-row-start: 2;
+  }
+
+  div:nth-child(3) {
+    grid-row-start: 3;
+  }
+
+  div:nth-child(4) {
+    grid-row-start: 4;
+  }
+
+  div:nth-child(5) {
+    grid-row-start: 5;
+  }
+}
+
+.profile-details-group {
+  span {
+    font-size: 1rem;
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0;
+  }
+}

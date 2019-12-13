@@ -1,6 +1,6 @@
 .main-test-container {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 225px 1fr;
   grid-gap: 1rem;
 }
 
@@ -37,7 +37,7 @@
     li {
       margin-bottom: .5rem;
       input {
-        margin: 0 .4rem;
+        margin: 0 .35rem;
       }
     }
 

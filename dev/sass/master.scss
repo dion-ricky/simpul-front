@@ -47,7 +47,11 @@ img.user-avatar {
 
 }
 
-img.user-avatar.avatar-rounded {
+img.user-avatar-lg {
+  width: 150px;
+}
+
+.avatar-rounded {
   border-radius: 50%;
 }
 
@@ -55,9 +59,14 @@ img.user-avatar.avatar-rounded {
   display: flex;
 }
 
+@import 'card';
 @import 'test-online';
 @import 'test-soal';
 @import 'footer';
+@import 'profile';
+@import 'home';
+@import 'login';
+@import 'signup';
 
 .fixed {
   position: fixed;

@@ -21,9 +21,9 @@
           </a>
 
          <div class="dropdown-menu" aria-labelledby="accountAvatar">
-           <a class="dropdown-item" href="#">Profile</a>
+           <a class="dropdown-item" href="/profile.html">Profile</a>
            <a class="dropdown-item" href="#">Log out</a>
-           <a class="dropdown-item" href="#">Log in</a>
+           <a class="dropdown-item" href="/login.html">Log in</a>
          </div>
         </li>
         <li>
@@ -54,7 +54,7 @@
         <h2 style="margin-top: 1rem;">ADDRESS</h2>
         <span>Jl. Terusan Ambarawa No. 10, Lowokwaru, Malang, Jawa Timur 65145</span>
 
-        <form class="" action="index.html" method="post" style="margin-top: 2rem;">
+        <form class="" action="index.html" id="formContact" method="post" style="margin-top: 2rem;">
           <h1>CONTACT US</h1>
           <div class="row">
             <div class="col">
@@ -89,7 +89,7 @@
             <textarea id="message" rows="8" cols="80" class="form-control" placeholder="Message" required></textarea>
           </div>
           <div class="flex flex-row" style="justify-content: flex-end">
-            <a href="#" class="btn btn-primary flex" onclick="document.getElementById('myForm').submit();">
+            <a href="#" class="btn btn-primary flex" onclick="$('#formContact').submit();">
               Send
               &nbsp;
               <i class="material-icons">send</i>

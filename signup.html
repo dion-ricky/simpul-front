@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/master.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/master.js" charset="utf-8"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a class="account_avatar" href="#" id="accountAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-html="true" title="">
+          <i class="material-icons">account_circle</i>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="accountAvatar">
+          <a class="dropdown-item" href="/profile.html">Profile</a>
+          <a class="dropdown-item" href="#">Log out</a>
+          <a class="dropdown-item" href="/login.html">Log in</a>
+        </div>
+      </li>
+      <li>
+        <a class="active" href="/">Home</a>
+      </li>
+      <li>
+        <a href="/test-online.html">Test Online</a>
+      </li>
+      <li>
+        <a href="/reward.html">Reward</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container col-md-8 container-card">
+    <form class="form-signup ">
+      <div class="signup-grid">
+        <div class="form-group">
+          <label for="inputPassword">Nama</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="Nama" required>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Phone</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="08123456789" required>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">NISN</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="9224192919" required>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Kontak Darurat</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="08987654321" required>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Tempat, Tanggal Lahir</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="Kota" required>
+          <input type="date" id="inputPassword" class="form-control" placeholder="01 Januari 2000" required>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <input type="password" id="inputPasswordValidation" class="form-control"placeholder="Retype your password" value="">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Sekolah</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="Nama Sekolah" required>
+        </div>
+        <div class="form-group" style="grid-row-start: 4; grid-row-end: 6; grid-column-start: 2;">
+          <label for="inputEmail">Re-captcha</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <input type="checkbox" name="" value=""> Dengan ini saya menyetujui Syarat dan Ketentuan dan Kebijakan Privasi
+        </div>
+        <div class="form-group">
+          <label for="inputEmail">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        </div>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Create an account</button>
+        <a href="/signup.html">Sign in</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

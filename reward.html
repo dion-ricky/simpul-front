@@ -1,169 +1,213 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
-    <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/master.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/js/master.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <a class="account_avatar" href="#" id="accountAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-html="true" title="">
-            <i class="material-icons">account_circle</i>
-          </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/master.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/master.js" charset="utf-8"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a class="account_avatar" href="#" id="accountAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-html="true" title="">
+          <i class="material-icons">account_circle</i>
+        </a>
 
-         <div class="dropdown-menu" aria-labelledby="accountAvatar">
-           <a class="dropdown-item" href="#">Profile</a>
-           <a class="dropdown-item" href="#">Log out</a>
-           <a class="dropdown-item" href="#">Log in</a>
-         </div>
-        </li>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/test-online.html">Test Online</a>
-        </li>
-        <li>
-          <a href="/reward.html" class="active">Reward</a>
-        </li>
-        <li>
-          <a href="/about.html">About</a>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="container-card col-md-8">
-            <h1>Reward</h1>
-            <div class="category-container">
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
-                  <i class="material-icons">flight_takeoff</i>
-                  <span class="category-card-label">???</span>
-                </a>
-              </div>
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
-                  <i class="material-icons">flight_takeoff</i>
-                  <span class="category-card-label">???</span>
-                </a>
-              </div>
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
-                  <i class="material-icons">flight_takeoff</i>
-                  <span class="category-card-label">???</span>
-                </a>
-              </div>
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
-                  <i class="material-icons">flight_takeoff</i>
-                  <span class="category-card-label">Trip to Bali</span>
-                </a>
-              </div>
-            </div>
-            <div class="category-container">
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
-                  <i class="material-icons">attach_money</i>
-                  <span class="category-card-label">OVO Cash 10.000</span>
-                </a>
-              </div>
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
-                  <i class="material-icons">attach_money</i>
-                  <span class="category-card-label">OVO Cash 10.000</span>
-                </a>
-              </div>
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
-                  <i class="material-icons">attach_money</i>
-                  <span class="category-card-label">OVO Cash 10.000</span>
-                </a>
-              </div>
-              <div class="category-card">
-                <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
-                  <i class="material-icons">attach_money</i>
-                  <span class="category-card-label">OVO Cash 10.000</span>
-                </a>
-              </div>
-            </div>
+        <div class="dropdown-menu" aria-labelledby="accountAvatar">
+          <a class="dropdown-item" href="/profile.html">Profile</a>
+          <a class="dropdown-item" href="#">Log out</a>
+          <a class="dropdown-item" href="/login.html">Log in</a>
+        </div>
+      </li>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/test-online.html">Test Online</a>
+      </li>
+      <li>
+        <a href="/reward.html" class="active">Reward</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="container-card">
+        <h1>Reward</h1>
+        <div class="category-container">
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">???</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">???</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">???</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">Trip to Bali</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">Trip to Bali</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">Trip to Bali</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">Trip to Bali</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModal">
+              <i class="material-icons">flight_takeoff</i>
+              <span class="category-card-label">Trip to Bali</span>
+            </a>
+          </div>
+        </div>
+        <div class="category-container">
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+          <div class="category-card">
+            <a href="#" class="category-card-link" data-toggle="modal" data-target="#claimModalOvo">
+              <i class="material-icons">attach_money</i>
+              <span class="category-card-label">OVO Cash 10.000</span>
+            </a>
+          </div>
+        </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="claimModal" tabindex="-1" role="dialog" aria-labelledby="claimModal" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="claimModalTitle" style="font-weight: 400">Claim Reward</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <form class="" action="index.html" method="post">
-                    <div class="modal-body">
-                      <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" class="form-control" required>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                      <button type="submit" class="btn btn-primary">Claim Reward</button>
-                    </div>
-                  </form>
-                </div>
+        <!-- Modal -->
+        <div class="modal fade" id="claimModal" tabindex="-1" role="dialog" aria-labelledby="claimModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="claimModalTitle" style="font-weight: 400">Claim Reward</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
-            <div class="modal fade" id="claimModalOvo" tabindex="-1" role="dialog" aria-labelledby="claimModalOvo" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="claimModalTitle" style="font-weight: 400">Claim Reward</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+              <form class="" action="index.html" method="post">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" required>
                   </div>
-                  <form class="" action="index.html" method="post">
-                    <div class="modal-body">
-                      <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" id="username" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" class="form-control" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="ovo">No. OVO</label>
-                        <input type="text" id="ovo" class="form-control" value="" required>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                      <button type="submit" class="btn btn-primary">Claim Reward</button>
-                    </div>
-                  </form>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                  </div>
                 </div>
-              </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Claim Reward</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-md-2"></div>
+        </div>
+        <div class="modal fade" id="claimModalOvo" tabindex="-1" role="dialog" aria-labelledby="claimModalOvo" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="claimModalTitle" style="font-weight: 400">Claim Reward</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form class="" action="index.html" method="post">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="ovo">No. OVO</label>
+                    <input type="text" id="ovo" class="form-control" value="" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary">Claim Reward</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
 </html>

@@ -25,4 +25,10 @@ $(document).ready(function () {
     // $("label[for='"+ $(this).attr("id") +"']");
     $("[for='"+ $(this).attr("id")+"']").attr("data-after-value", "*");
   });
+
+  $("a[href='#']").each(function (id) {
+    $(this).on("click", function(ev) {
+      ev.preventDefault();
+    });
+  });
 });
