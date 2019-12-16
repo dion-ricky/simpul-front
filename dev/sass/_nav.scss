@@ -48,9 +48,19 @@ nav {
 }
 
 .simpul-nav-collapse {
-  display: block;
+  display: flex;
+  align-items: center;
   flex-grow: 1;
   flex-basis: auto;
+}
+
+.nav-simpul-logo {
+  background-image: url('/assets/simpul-logo-crop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 40px;
 }
 
 .simpul-nav-collapse.show {
@@ -64,6 +74,7 @@ nav {
 .simpul-nav-toggler {
   display: none;
   padding: .5rem;
+  align-self: center;
 
   .material-icons {
     vertical-align: middle;
@@ -100,12 +111,12 @@ nav.nav-scrolled {
   & ul li {
     a.active {
       font-size: 1rem;
-      line-height: normal;
+      line-height: 1.5rem;
     }
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1148px) {
   nav {
     & ul {
       padding: 0;
@@ -121,6 +132,10 @@ nav.nav-scrolled {
         }
       }
     }
+  }
+
+  .nav-simpul-logo-link {
+    padding: .75rem 0;
   }
 
   .simpul-nav-collapse {

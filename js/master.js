@@ -9,7 +9,7 @@ $(document).ready(function () {
 
   $("[position-config='sticky']").each(function (id) {
     $(this).css({'position': 'sticky',
-                 'top': $("nav > ul").outerHeight()
+                 'top': $("nav").outerHeight()
                 });
   });
 

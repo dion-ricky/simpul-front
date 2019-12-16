@@ -18,11 +18,11 @@
 }
 
 .ranking-wrapper {
-  width: 80%;
+  // width: 80%;
 }
 
 .guru-wrapper {
-  width: 20%;
+  // width: 20%;
 }
 
 
@@ -56,22 +56,42 @@ ol.custom-list {
   }
 }
 
+.rank-guru-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+}
+
+.guru-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px);
+  grid-gap: .5rem;
+}
+
 @media only screen and (max-width: 767px) {
   .category-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(4, minmax(125px, 1fr));
+    grid-gap: .5rem;
+  }
 
-    .category-card {
-      .category-card-link {
-        padding: 0;
+  .category-card-link {
+    padding: 1rem 0;
+  }
 
-        span {
-          margin-top: 0;
-        }
-      }
+  .category-card {
+    border-radius: .75rem;
+    margin: 0;
+
+    .material-icons {
+      font-size: 3rem;
+    }
+    .category-card-label {
+      margin-top: 0;
     }
   }
 
+  .rank-guru-wrapper {
+    grid-template-columns: 1fr;
+  }
 
 }

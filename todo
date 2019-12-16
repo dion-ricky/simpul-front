@@ -1,16 +1,30 @@
-- top up
-- riwayat saldo
 - versi mobile:
-  - navigation V
-  - home (iklan)
-  - profile
-  - signup
-  - test online (guru)
-  - category card (model 2 row)
-  - test soal (tempat answer)
+  - navigation v
+  - home (iklan) v
+  - profile v
+  - signup v
+  - test online (guru) v
+  - category card (model 2 row) v
+  - test soal (tempat answer) v
 
-- paketan simpul
-- tentang simpul
-- ranking
 - #00134A nav
 - #00A5FF nav color
+
+- test soal versi hp answernya disebelah
+
+- tentang simpul
+
+- paketan simpul
+  - paketan zigzag
+
+- ranking
+  - tabel
+
+- testimoni
+  -
+
+- top up
+  - upload screenshot
+
+- riwayat saldo
+  - tabel

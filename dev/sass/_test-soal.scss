@@ -186,3 +186,24 @@
 .tes-submit {
   grid-column-start: 2;
 }
+
+@media only screen and (max-width: 970px) {
+  .main-test-container {
+    grid-template-columns: 1fr;
+  }
+
+  .answer-header-container {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  .answer-container {
+    grid-row: 4;
+    grid-column-start: 1;
+  }
+
+  .tes-submit {
+    grid-column-start: 1;
+  }
+
+}

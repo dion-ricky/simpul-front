@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
-    <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>About</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="/js/bootstrap.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -14,7 +14,9 @@
   </head>
   <body>
     <nav>
-      <a href="#">Logo</a>
+      <a href="/" class="nav-simpul-logo-link">
+        <div class="nav-simpul-logo"></div>
+      </a>
       <a href="#" class="simpul-nav-toggler" nav-toggle="#simpulNavCollapse">
         <i class="material-icons">menu</i>
       </a>
@@ -40,6 +42,15 @@
             <a href="/reward.html" >Reward</a>
           </li>
           <li>
+            <a href="#">Ranking</a>
+          </li>
+          <li>
+            <a href="/tentang-simpul.html">Tentang Simpul</a>
+          </li>
+          <li>
+            <a href="#">Paket Simpul</a>
+          </li>
+          <li>
             <a href="/about.html" class="active">About</a>
           </li>
         </ul>
@@ -61,44 +72,34 @@
 
         <form class="" action="index.html" id="formContact" method="post" style="margin-top: 2rem;">
           <h1>CONTACT US</h1>
-          <div class="row">
-            <div class="col">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Name" required>
-              </div>
+          <div class="form-contact">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Name" required>
             </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="name">Email</label>
-                <input type="text" id="email" class="form-control" placeholder="john@example.com" required>
-              </div>
+            <div class="form-group">
+              <label for="name">Email</label>
+              <input type="text" id="email" class="form-control" placeholder="john@example.com" required>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="form-group">
-                <label for="name">Phone</label>
-                <input type="text" id="phone" class="form-control" placeholder="08123456789" required>
-              </div>
+            <div class="form-group">
+              <label for="name">Phone</label>
+              <input type="text" id="phone" class="form-control" placeholder="08123456789" required>
             </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" id="email" class="form-control" placeholder="Subject" required>
-              </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" id="email" class="form-control" placeholder="Subject" required>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="8" cols="80" class="form-control" placeholder="Message" required></textarea>
-          </div>
-          <div class="flex flex-row" style="justify-content: flex-end">
-            <a href="#" class="btn btn-primary flex" onclick="$('#formContact').submit();">
-              Send
-              &nbsp;
-              <i class="material-icons">send</i>
-            </a>
+            <div class="form-group form-message">
+              <label for="message">Message</label>
+              <textarea id="message" rows="8" cols="80" class="form-control" placeholder="Message" required></textarea>
+            </div>
+            <div class="flex flex-row form-submit" style="justify-content: flex-end">
+              <a href="#" class="btn btn-primary flex" onclick="$('#formContact').submit();">
+                Send
+                &nbsp;
+                <i class="material-icons">send</i>
+              </a>
+            </div>
           </div>
         </form>
       </div>
