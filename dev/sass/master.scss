@@ -77,3 +77,15 @@ label::after {
   color: red;
   margin-left: .5rem;
 }
+
+
+div.hr {
+  width: 100%;
+  height: .15rem;
+  margin: .5rem 0;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(221,221,221,1) 50%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(221,221,221,1) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(221,221,221,1) 50%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
