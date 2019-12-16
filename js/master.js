@@ -32,4 +32,13 @@ $(document).ready(function () {
       $(modalTarget + " #prizeId").val(prizeId);
     })
   });
+
+  $("[nav-toggle]").on("click", function() {
+    var target = $(this).attr("nav-toggle");
+    if( $(target).hasClass("show") ) {
+      $(target).removeClass("show");
+    } else {
+      $(target).addClass("show");
+    }
+  });
 });

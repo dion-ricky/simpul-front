@@ -15,31 +15,36 @@
 </head>
 <body>
   <nav>
-    <ul>
-      <li>
-        <a class="account_avatar" href="#" id="accountAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-html="true" title="">
-          <i class="material-icons">account_circle</i>
-        </a>
-
-        <div class="dropdown-menu" aria-labelledby="accountAvatar">
-          <a class="dropdown-item" href="/profile.html">Profile</a>
-          <a class="dropdown-item" href="#">Log out</a>
-          <a class="dropdown-item" href="/login.html">Log in</a>
-        </div>
-      </li>
-      <li>
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/test-online.html">Test Online</a>
-      </li>
-      <li>
-        <a href="/reward.html">Reward</a>
-      </li>
-      <li>
-        <a href="/about.html">About</a>
-      </li>
-    </ul>
+    <a href="#">Logo</a>
+    <a href="#" class="simpul-nav-toggler" nav-toggle="#simpulNavCollapse">
+      <i class="material-icons">menu</i>
+    </a>
+    <div class="simpul-nav-collapse" id="simpulNavCollapse">
+      <ul>
+        <li>
+          <a class="account-avatar" href="#" id="accountAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-html="true" title="">
+            <i class="material-icons">account_circle</i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="accountAvatar">
+            <a class="dropdown-item" href="/profile.html">Profile</a>
+            <a class="dropdown-item" href="#">Log out</a>
+            <a class="dropdown-item" href="/login.html">Log in</a>
+          </div>
+        </li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/test-online.html">Test Online</a>
+        </li>
+        <li>
+          <a href="/reward.html" >Reward</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div class="container col-md-8 container-card">
     <form class="form-signup ">
@@ -74,7 +79,7 @@
           <label for="signupSchool">Sekolah</label>
           <input type="text" id="signupSchool" class="form-control" placeholder="Nama Sekolah" required>
         </div>
-        <div class="form-group" style="grid-row-start: 4; grid-row-end: 6; grid-column-start: 2;">
+        <div class="form-group captcha">
           <label for="signupCaptcha">Re-captcha</label>
           <input type="email" id="signupCaptcha" class="form-control" placeholder="Captcha" required >
           <label for="signupLegal">
@@ -82,7 +87,7 @@
             &nbsp;
             Dengan ini saya menyetujui Syarat dan Ketentuan dan Kebijakan Privasi</label>
         </div>
-        <div class="form-group">
+        <div class="form-group signup-email">
           <label for="signupEmail">Email address</label>
           <input type="email" id="signupEmail" class="form-control" placeholder="Email address" required >
         </div>

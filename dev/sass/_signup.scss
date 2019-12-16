@@ -3,3 +3,22 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: .5rem 2rem;
 }
+
+.capthca {
+  grid-row-start: 4; grid-row-end: 6; grid-column-start: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .signup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .captcha {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .signup-email {
+    grid-row-start: 6;
+  }
+}
