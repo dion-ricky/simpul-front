@@ -73,7 +73,7 @@ nav {
 
 .simpul-nav-toggler {
   display: none;
-  padding: .5rem;
+  padding: 0;
   align-self: center;
 
   .material-icons {
@@ -116,7 +116,7 @@ nav.nav-scrolled {
   }
 }
 
-@media only screen and (max-width: 1148px) {
+@media only screen and (max-width: 1178px) {
   nav {
     & ul {
       padding: 0;

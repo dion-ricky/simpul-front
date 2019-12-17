@@ -28,6 +28,8 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="accountAvatar">
               <a class="dropdown-item" href="/profile.html">Profile</a>
+              <a class="dropdown-item" href="/topup.html">Top Up</a>
+              <a class="dropdown-item" href="/riwayat-topup.html">Riwayat Top Up</a>
               <a class="dropdown-item" href="#">Log out</a>
               <a class="dropdown-item" href="/login.html">Log in</a>
             </div>
@@ -42,13 +44,13 @@
             <a href="/reward.html" >Reward</a>
           </li>
           <li>
-            <a href="#">Ranking</a>
+            <a href="/ranking.html">Ranking</a>
           </li>
           <li>
             <a href="/tentang-simpul.html">Tentang Simpul</a>
           </li>
           <li>
-            <a href="#">Paket Simpul</a>
+            <a href="/paket-simpul.html">Paket Simpul</a>
           </li>
           <li>
             <a href="/about.html">About</a>
@@ -107,9 +109,12 @@
                   <span class="testi-author">Michael Albertus</span>
                 </div>
               </div>
-              <!-- <div class="pointer-next">
-                <span>></span>
-              </div> -->
+              <a href="#" onclick="testiPlus(1)" class="pointer-next">
+                &#10095;
+              </a>
+              <a href="#" onclick="testiPlus(-1)" class="pointer-prev">
+                &#10094;
+              </a>
             </div>
           </div>
         </div>
@@ -118,14 +123,34 @@
     <footer style="position: absolute; width: 100%;">
         <div class="container">
           <h1>Partner</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <img src="/assets/digifast-logo.png" class="partner-logo" alt="">
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
           <span>Created by Digifast 2019</span>
         </div>
     </footer>
     <script type="text/javascript">
-    $("document").ready(changeTestiIndex());
+    $("document").ready(function () {
+      var wrapper = $(".testi-card-wrapper");
+      wrapper.attr("data-testi-count", wrapper.children(".testi-card-container").length);
+      // console.log();
+      showTesti();
+    });
 
-    function changeTestiIndex() {
+    function testiPlus(n) {
+      var wrapper = $(".testi-card-wrapper")
+      var current = parseInt(wrapper.attr("data-testi-index"));
+      var next = current + n;
+      if (next > parseInt(wrapper.attr("data-testi-count"))/2-1) {
+        next = 0;
+      } else if (next < 0) {
+        next = parseInt(wrapper.attr("data-testi-count")/2-1);
+      }
+      wrapper.attr("data-testi-index", next);
+      showTesti();
+    }
+
+    function showTesti() {
+
       $(".testi-card-wrapper").children(".testi-card-container").each(function (id) {
         var start = $(".testi-card-wrapper").attr("data-testi-index");
 

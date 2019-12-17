@@ -192,18 +192,52 @@
     grid-template-columns: 1fr;
   }
 
+  .question-container > div {
+    flex-direction: column !important;
+  }
+
   .answer-header-container {
     grid-row-start: 3;
     grid-column-start: 1;
+    display: none;
   }
 
   .answer-container {
     grid-row: 4;
     grid-column-start: 1;
+    display: none;
   }
 
   .tes-submit {
     grid-column-start: 1;
+  }
+
+  .question-list ol {
+    padding-left: 0;
+  }
+
+  .question-list li .question-choice-list {
+    grid-template-columns: 1fr;
+
+    p:nth-child(1) {
+      grid-row-start: 1;
+    }
+
+    p:nth-child(2) {
+      grid-row-start: 2;
+    }
+
+    p:nth-child(3) {
+      grid-row-start: 3;
+    }
+
+    p:nth-child(4) {
+      grid-row-start: 4;
+    }
+
+    p:nth-child(5) {
+      grid-row-start: 5;
+    }
   }
 
 }

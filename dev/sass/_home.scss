@@ -28,10 +28,18 @@
 }
 
 .testi-card-wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(275px, 1fr);
   grid-column-gap: 1rem;
+  // overflow-x: hidden;
+
+  &:hover {
+    .pointer-next, .pointer-prev {
+      opacity: 1;
+    }
+  }
 }
 
 .testi-card-container {
@@ -43,13 +51,39 @@
   background-position: center;
   border-radius: .5rem;
   transition: box-shadow .25s;
+  -webkit-animation-name: sh-fade;
+  -webkit-animation-duration: .75s;
+  animation-name: sh-fade;
+  animation-duration: .75s;
+  box-shadow: 0px 0px 5px rgba(#ccc, 1);
 
   &:hover {
-    box-shadow: 0px 0px 10px rgba(#ccc, 1);
+    box-shadow: 0px 0px 20px rgba(#ccc, 1);
 
     .testi-card-label {
       box-shadow: 0px 0px 25px rgba(#fff, 1);
     }
+  }
+}
+@-webkit-keyframes sh-fade {
+  from {
+    transform: translateX(25%);
+    opacity: .4;
+  }
+  to {
+    transform: translateX(0%);
+  }
+  opacity: 1;
+}
+
+@keyframes sh-fade {
+  from {
+    transform: translateX(25%);
+    opacity: .4;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 
@@ -70,15 +104,33 @@
     content: "\2014\00a0";
   }
 }
-// 
-// .pointer-next {
-//   position: absolute;
-//   background-color: white;
-//   box-shadow: 0px 0px 5px rgba(#ccc, 1);
-//   width: 20px;
-//   height: 20px;
-//   border-radius: 50%;
-// }
+
+.pointer-next {
+  right: -1rem;
+}
+
+.pointer-prev {
+  left: -1rem;
+}
+
+.pointer-next, .pointer-prev {
+  opacity: 0;
+  transition: opacity .25s;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(#ccc, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: inherit;
+  top: 50%;
+
+  &:hover, &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
 
 .testimoni {
   grid-column: 2/3;
@@ -104,8 +156,11 @@
     grid-row-gap: 1rem;
     grid-template-rows: repeat(2, minmax(275px, 1fr));
   }
-}
 
+  .pointer-next, .pointer-prev {
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width: 1180px) {
   .home-wrapper {

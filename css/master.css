@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700&display=swap");
 html, body {
   margin: 0;
@@ -6,7 +7,7 @@ html, body {
   background-color: white; }
 
 body {
-  background-color: #dbdeea;
+  background-color: #f4f5f9;
   min-height: 100vh;
   padding-top: 7rem;
   padding-bottom: 5rem; }
@@ -81,7 +82,7 @@ nav {
 
 .simpul-nav-toggler {
   display: none;
-  padding: .5rem;
+  padding: 0;
   align-self: center; }
   .simpul-nav-toggler .material-icons {
     vertical-align: middle; }
@@ -109,7 +110,7 @@ nav.nav-scrolled {
     font-size: 1rem;
     line-height: 1.5rem; }
 
-@media only screen and (max-width: 1148px) {
+@media only screen and (max-width: 1178px) {
   nav ul {
     padding: 0;
     flex-flow: column; }
@@ -131,7 +132,7 @@ nav.nav-scrolled {
   nav.nav-scrolled ul li a.active {
     font-size: 1.5rem; } }
 .container-card {
-  background-color: #f4f5f9;
+  background-color: #fff;
   border-radius: 1rem;
   padding: 3rem 5rem; }
 
@@ -150,7 +151,7 @@ img.user-avatar-lg {
 .card-center-feature {
   padding: 1rem;
   display: inline-block;
-  background-color: #f4f5f9;
+  background-color: #fff;
   position: absolute;
   transform: translateY(-75%); }
 
@@ -163,11 +164,10 @@ img.user-avatar-lg {
     margin-top: 3.25rem; }
 
 .category-card {
-  background-color: #ee7a90;
+  background-color: #fff;
   border-radius: 1rem;
   text-align: center;
   margin: 0 .25rem;
-  cursor: pointer;
   transition: box-shadow .25s; }
   .category-card span {
     display: block;
@@ -363,16 +363,37 @@ ol.custom-list li {
   .main-test-container {
     grid-template-columns: 1fr; }
 
+  .question-container > div {
+    flex-direction: column !important; }
+
   .answer-header-container {
     grid-row-start: 3;
-    grid-column-start: 1; }
+    grid-column-start: 1;
+    display: none; }
 
   .answer-container {
     grid-row: 4;
-    grid-column-start: 1; }
+    grid-column-start: 1;
+    display: none; }
 
   .tes-submit {
-    grid-column-start: 1; } }
+    grid-column-start: 1; }
+
+  .question-list ol {
+    padding-left: 0; }
+
+  .question-list li .question-choice-list {
+    grid-template-columns: 1fr; }
+    .question-list li .question-choice-list p:nth-child(1) {
+      grid-row-start: 1; }
+    .question-list li .question-choice-list p:nth-child(2) {
+      grid-row-start: 2; }
+    .question-list li .question-choice-list p:nth-child(3) {
+      grid-row-start: 3; }
+    .question-list li .question-choice-list p:nth-child(4) {
+      grid-row-start: 4; }
+    .question-list li .question-choice-list p:nth-child(5) {
+      grid-row-start: 5; } }
 footer {
   margin-top: 2rem;
   background-color: white;
@@ -381,6 +402,11 @@ footer {
     color: #707070; }
   footer h1 {
     font-size: 1rem; }
+  footer .partner-logo {
+    width: 200px; }
+  footer span {
+    margin-top: 1rem;
+    display: block; }
 
 .profile-card {
   padding: 3rem 3rem; }
@@ -438,10 +464,13 @@ footer {
     border-radius: 10px; }
 
 .testi-card-wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(275px, 1fr);
   grid-column-gap: 1rem; }
+  .testi-card-wrapper:hover .pointer-next, .testi-card-wrapper:hover .pointer-prev {
+    opacity: 1; }
 
 .testi-card-container {
   text-align: center;
@@ -451,12 +480,31 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: .5rem;
-  transition: box-shadow .25s; }
+  transition: box-shadow .25s;
+  -webkit-animation-name: sh-fade;
+  -webkit-animation-duration: .75s;
+  animation-name: sh-fade;
+  animation-duration: .75s;
+  box-shadow: 0px 0px 5px #cccccc; }
   .testi-card-container:hover {
-    box-shadow: 0px 0px 10px #cccccc; }
+    box-shadow: 0px 0px 20px #cccccc; }
     .testi-card-container:hover .testi-card-label {
       box-shadow: 0px 0px 25px white; }
 
+@-webkit-keyframes sh-fade {
+  from {
+    transform: translateX(25%);
+    opacity: .4; }
+  to {
+    transform: translateX(0%); }
+  opacity: 1; }
+@keyframes sh-fade {
+  from {
+    transform: translateX(25%);
+    opacity: .4; }
+  to {
+    transform: translateX(0%);
+    opacity: 1; } }
 .testi-card-label {
   background-color: white;
   padding: 1rem .25rem;
@@ -471,6 +519,28 @@ footer {
   font-weight: 600; }
   .testi-author::before {
     content: "\2014\00a0"; }
+
+.pointer-next {
+  right: -1rem; }
+
+.pointer-prev {
+  left: -1rem; }
+
+.pointer-next, .pointer-prev {
+  opacity: 0;
+  transition: opacity .25s;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 5px #cccccc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: inherit;
+  top: 50%; }
+  .pointer-next:hover, .pointer-next:active, .pointer-prev:hover, .pointer-prev:active {
+    text-decoration: none;
+    color: inherit; }
 
 .testimoni {
   grid-column: 2/3; }
@@ -490,7 +560,10 @@ footer {
   .testi-card-wrapper {
     grid-template-columns: 1fr;
     grid-row-gap: 1rem;
-    grid-template-rows: repeat(2, minmax(275px, 1fr)); } }
+    grid-template-rows: repeat(2, minmax(275px, 1fr)); }
+
+  .pointer-next, .pointer-prev {
+    opacity: 1; } }
 @media only screen and (max-width: 1180px) {
   .home-wrapper {
     grid-row-gap: 1rem; }
@@ -570,6 +643,142 @@ footer {
 
   .form-submit {
     grid-column: 1/2; } }
+.paket-header {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px; }
+  .paket-header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #111; }
+
+.paket-wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: minmax(400px, 1fr);
+  grid-column-gap: 1.5rem;
+  margin-top: 2rem; }
+
+.paket-wrapper-right {
+  grid-template-columns: 1fr 300px;
+  text-align: right; }
+
+.paket-card {
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0px 0px 5px #cccccc; }
+  .paket-card:hover {
+    box-shadow: 0px 0px 50px #bbbbbb; }
+    .paket-card:hover .paket-card-header {
+      background-color: #00A5FF;
+      color: white; }
+
+.paket-card-header {
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  transition: background-color .25s, color .25s;
+  background-color: #eee; }
+
+.paket-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; }
+
+.paket-best-seller {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0; }
+
+.paket-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0; }
+
+.paket-price {
+  font-size: 1.75rem;
+  position: relative; }
+  .paket-price::before, .paket-price::after {
+    color: #888;
+    font-size: 1.15rem;
+    position: absolute;
+    top: 15%; }
+  .paket-price::before {
+    content: "Rp.\00a0";
+    left: 3.55rem; }
+  .paket-price::after {
+    content: " ,-"; }
+
+.paket-benefit {
+  padding-left: 0;
+  font-size: 1.25rem;
+  list-style: none; }
+  .paket-benefit li {
+    margin-bottom: .25rem; }
+
+@media only screen and (max-width: 768px) {
+  .paket-wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    text-align: center; }
+
+  .paket-wrapper-right .paket-description {
+    grid-row: 2/3; }
+
+  .paket-price::before {
+    left: 33.5%; }
+
+  .paket-card-header {
+    border-radius: .75rem .75rem 0 0; } }
+@media only screen and (max-width: 530px) {
+  .paket-price::before {
+    left: 24.5%; } }
+.riwayat-topup-table {
+  width: 100%;
+  text-align: center; }
+  .riwayat-topup-table tr:nth-child(even) {
+    background-color: #eee; }
+  .riwayat-topup-table tr {
+    border-bottom: 1px solid #ccc; }
+
+.riwayat-status {
+  display: inline-block;
+  padding: .25rem .5rem;
+  margin: 1rem;
+  border-radius: 5px; }
+
+.status-waiting {
+  background-color: #ffc107; }
+
+.status-success {
+  background-color: #28a745;
+  color: white; }
+
+.status-failed {
+  background-color: #dc3545;
+  color: white; }
+
+.ranking-table {
+  width: 100%;
+  text-align: center; }
+  .ranking-table th:nth-of-type(1) {
+    width: 100px; }
+  .ranking-table th:nth-of-type(2) {
+    width: 75px; }
+  .ranking-table tr:nth-child(even) {
+    background-color: #eee; }
+  .ranking-table tr {
+    border-bottom: 1px solid #ccc; }
+  .ranking-table img {
+    margin: .5rem 0; }
+
+.test-rule {
+  text-align: center; }
+  .test-rule h1 {
+    color: inherit; }
+
 .fixed {
   position: fixed; }
 

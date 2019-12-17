@@ -42,3 +42,25 @@ $(document).ready(function () {
     }
   });
 });
+
+function blockKeyInput() {
+  $(document).keydown(function (e) {
+    e.preventDefault();
+  });
+}
+
+function blockRightClick() {
+  $(document).on("contextmenu", function(e) {
+    e.preventDefault();
+  });
+}
+
+function reloadOnWindowBlur() {
+  $(window).blur(function(e) {
+    location.reload();
+  });
+}
+
+function hideNavBar() {
+  $("nav").hide();
+}

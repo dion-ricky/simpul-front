@@ -18,18 +18,18 @@
 }
 
 .category-card {
-  background-color: $categorybg;
+  background-color: #fff;
   border-radius: 1rem;
   text-align: center;
   margin: 0 .25rem;
-  cursor: pointer;
+  // cursor: pointer;
   transition: box-shadow .25s;
 
   span {
     display: block;
     margin-top: 1rem;
   }
-  
+
   .material-icons {
     font-size: 5rem;
   }
