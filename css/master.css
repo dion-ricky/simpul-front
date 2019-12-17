@@ -67,7 +67,7 @@ nav {
   flex-basis: auto; }
 
 .nav-simpul-logo {
-  background-image: url("/assets/simpul-logo-crop.png");
+  background-image: url("../assets/simpul-logo-crop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
