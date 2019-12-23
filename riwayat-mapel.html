@@ -62,41 +62,37 @@
   <main>
     <div class="container">
       <div class="container-card">
-        <h1>Top Up</h1>
-        <form class="" id="topUpForm" action="index.html" method="post">
-          <div class="form-group">
-            <label for="nama">Nama</label>
-            <input type="text" name="nama" class="form-control" id="nama" value="" placeholder="Nama" required>
-          </div>
-          <div class="form-group">
-            <label for="fileScreenshot">Unggah Tangkapan Layar</label>
-            <input type="file" id="fileScreenshot" multiple accept="image/*" style="display: block" required>
-          </div>
-          <a href="#" class="btn btn-primary btn-lg tes-submit"  data-toggle="modal" data-target="#verifikasiModal">Verifikasi</a>
-        </form>
+        <h1>Riwayat Mata Pelajaran</h1>
+        <table class="riwayat-topup-table">
+          <tr>
+            <th>No.</th>
+            <th>Mata Pelajaran</th>
+            <th>Durasi</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Matematika</td>
+            <td>29 hari</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Fisika</td>
+            <td>15 hari</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Biologi</td>
+            <td>27 hari</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Kimia</td>
+            <td>20 hari</td>
+          </tr>
+        </table>
       </div>
     </div>
 
-    <div class="modal fade" id="verifikasiModal" tabindex="-1" role="dialog" aria-labelledby="verifikasiModal" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="verifikasiModalTitle" style="font-weight: 400">Verifikasi Top Up</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Proses verifikasi Top Up membutuhkan waktu 1x24 jam.</p>
-            <p>Status Top Up dapat dilihat pada halaman Riwayat Top Up</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-            <a href="#" onclick="$('#topUpForm').submit()" class="btn btn-primary">Verifikasi</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
 </body>
 </html>
