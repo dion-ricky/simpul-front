@@ -247,5 +247,28 @@
       </div>
     </div>
   </main>
+  <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmationModalTitle" style="font-weight: 400">Perhatian!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Nama Ujian: Matematika 12
+            Waktu: 75 menit
+            Klik mulai hanya jika Anda sudah siap mengerjakan ujian. Ujian tidak dapat dihentikan kecuali waktu berakhir atau Anda telah mensubmit jawaban.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <a href="#" onclick="testSoalFullscreen()" class="btn btn-primary">Mulai</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
