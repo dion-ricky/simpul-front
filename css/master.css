@@ -255,6 +255,19 @@ ol.custom-list li {
 
   .rank-guru-wrapper {
     grid-template-columns: 1fr; } }
+.timer-wrapper {
+  display: flex;
+  justify-content: flex-end; }
+  .timer-wrapper #answerCount {
+    margin: 0 .5rem;
+    font-family: "Source Code Pro", sans-serif; }
+  .timer-wrapper i {
+    font-size: 19px;
+    line-height: 1.3; }
+
+.timer {
+  font-family: "Source Code Pro", sans-serif; }
+
 .main-test-container {
   display: grid;
   grid-template-columns: 225px 1fr;
