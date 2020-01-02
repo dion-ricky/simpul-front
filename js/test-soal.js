@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+  $('#confirmationModal').modal({
+    keyboard: false
+  })
+
   $('#confirmationModal').modal('show');
 
   hideNavBar();
